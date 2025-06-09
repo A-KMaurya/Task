@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End Technical Support Task
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="add-to-cart">
+        <form id="addToCart">
+            <div class="cart-container">
+
+                <!-- Cart Heading Section -->
+                <div class="cart-heading">
+                    <div class="horizontal-line"></div>
+                    <h1>YAY! It's BOGO</h1>
+                    <div class="horizontal-line"></div>
+                </div>
+
+                <!-- Unit Section of Cart -->
+                <div class="cart-Unit">
+
+                    <!-- First Unit -->
+                    <div class="unit first ">
+                        <div class="unit-heading" data-target="unit1">
+                            <div>
+                                <input type="radio" name="unit" id="unit1" value="Unit-1" checked>
+                                <h2>1 Unit</h2>
+                                <p style="font-size: 0.8rem;padding-left: 20px;">Standard Price</p>
+                                <span class="discount"> 10% Off</span>
+                            </div>
+
+                            <div class="unit-price-details">
+                                <p class="unit-price"> &dollar;10.00 USD</p>
+                                <p class="unit-old-price"><strike> &dollar;24.00 USD</strike></p>
+                            </div>
+                        </div>
+                        <div class="unit-selection">
+                            <table class="unit-selection-table">
+                                <th>
+                                <td>Size</td>
+                                <td>Colour</td>
+                                </th>
+                                <tr>
+                                    <td id="row-number">#1</td>
+                                    <td>
+                                        <select name="Size" id="unit1FirstSize">
+                                            <option value="Small">S</option>
+                                            <option value="Medium">M</option>
+                                            <option value="Large">L</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="Colour" id="unit1FirstColour">
+                                            <option value="black">Black</option>
+                                            <option value="blue">Blue</option>
+                                            <option value="brown">Brown</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="row-number">#2</td>
+                                    <td>
+                                        <select name="Size" id="unit1SecondSize">
+                                            <option value="Small">S</option>
+                                            <option value="Medium">M</option>
+                                            <option value="Large">L</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="Colour" id="unit1SecondColour">
+                                            <option value="Colour">Colour</option>
+                                            <option value="blue">Blue</option>
+                                            <option value="brown">Brown</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Second Unit -->
+                    <div class="unit second selected">
+                        <div class="popular-conatiner">
+                            <p>MOST POPULAR</p>
+                        </div>
+                        <div class="unit-heading" data-target="unit2">
+                            <div>
+                                <input type="radio" name="unit" id="unit2" value="Unit-2">
+
+                                <h2>2 Unit</h2>
+                                <span class="discount"> 20% Off</span>
+                            </div>
+
+                            <div class="unit-price-details">
+                                <p class="unit-price"> &dollar;18.00 USD</p>
+                                <p class="unit-old-price"><strike> &dollar;24.00 USD</strike></p>
+                            </div>
+
+
+                        </div>
+                        <div class="unit-selection">
+                            <table class="unit-selection-table">
+                                <th>
+                                <td>Size</td>
+                                <td>Colour</td>
+                                </th>
+                                <tr>
+                                    <td id="row-number">#1</td>
+                                    <td>
+                                        <select name="Size" id="unit2FirstSize">
+                                            <option value="Small">S</option>
+                                            <option value="Medium">M</option>
+                                            <option value="Large">L</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="Colour" id="unit2FirstColour">
+                                            <option value="black">Black</option>
+                                            <option value="blue">Blue</option>
+                                            <option value="brown">Brown</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="row-number">#2</td>
+                                    <td>
+                                        <select name="Size" id="unit2SecondSize">
+                                            <option value="Small">S</option>
+                                            <option value="Medium">M</option>
+                                            <option value="Large">L</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="Colour" id="unit2SecondColour">
+                                            <option value="Colour">Colour</option>
+                                            <option value="blue">Blue</option>
+                                            <option value="brown">Brown</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Third Unit -->
+                    <div class="unit Third">
+                        <div class="unit-heading" data-target="unit3">
+                            <div>
+                                <input type="radio" name="unit" id="unit3" value="Unit-3">
+                                <h2>3 Unit</h2>
+                                <span class="discount"> 30% Off</span>
+                            </div>
+
+                            <div class="unit-price-details">
+                                <p class="unit-price"> &dollar;24.00 USD</p>
+                                <p class="unit-old-price"><strike> &dollar; 24.00 USD</strike></p>
+                            </div>
+                        </div>
+                        <div class="unit-selection">
+                            <table class="unit-selection-table">
+                                <th>
+                                <td>Size</td>
+                                <td>Colour</td>
+                                </th>
+                                <tr>
+                                    <td id="row-number">#1</td>
+                                    <td>
+                                        <select name="Size" id="unit3FirstSize">
+                                            <option value="Small">S</option>
+                                            <option value="Medium">M</option>
+                                            <option value="Large">L</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="Colour" id="unit3FirstColour">
+                                            <option value="black">Black</option>
+                                            <option value="blue">Blue</option>
+                                            <option value="brown">Brown</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="row-number">#2</td>
+                                    <td>
+                                        <select name="Size" id="unit3SecondSize">
+                                            <option value="Small">S</option>
+                                            <option value="Medium">M</option>
+                                            <option value="Large">L</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="Colour" id="unit3SecondColour">
+                                            <option value="Colour">Colour</option>
+                                            <option value="blue">Blue</option>
+                                            <option value="brown">Brown</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Total Section of Cart Items -->
+                <div class="cart-total">
+                    <p class="free-delivery"> Free Delivery </p> 
+                    <p class="cart-total-text">Total: &dollar;18.00 USD</p>
+                </div>
+
+                <!-- Place Card Section -->
+                <div class="place-cart">
+                    <!-- Place Cart Button -->
+                    <button class="add-to-cart-button"> <span class="add"> + </span>Add to Cart</button>
+                </div>
+
+                <!-- Powered By  -->
+                <div class="powered-by">
+                    <p>@Powered by Pumper</a></p>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
