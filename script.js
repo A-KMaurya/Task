@@ -56,7 +56,7 @@ document.getElementById("addToCart").addEventListener("submit", function (event)
         colorFirst = document.getElementById("unit3FirstColour").value;
         sizeFirst = document.getElementById("unit3FirstSize").value
 
-        colorSecond = document.getElementById("unit3SecondColour ").value;
+        colorSecond = document.getElementById("unit3SecondColour").value;
         sizeSecond = document.getElementById("unit3SecondSize").value;
     }
 
